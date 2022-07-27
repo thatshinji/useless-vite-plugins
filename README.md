@@ -7,6 +7,6 @@
 ```ts
 export default defineConfig({
   plugins: [AuthorTag({author: "shinji", date: new Date(), custom: `Hello Shinji`})]
-}``)
+})
 ```
 

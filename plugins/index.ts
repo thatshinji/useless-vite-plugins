@@ -1,0 +1,1 @@
+export { default as AuthorTag } from './author-tag'

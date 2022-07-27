@@ -4,5 +4,7 @@ import { AuthorTag } from './plugins/index'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), AuthorTag({author: "shinji"})]
+  plugins: [
+    react(),
+    AuthorTag({author: "shinji", date: new Date(), custom:"Hello Shinji" })]
 })

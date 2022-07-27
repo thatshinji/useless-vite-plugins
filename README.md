@@ -4,4 +4,9 @@
 
 ##### author-tag
 该插件可以在你的html页面中插入作者相关的注释内容
+```ts
+export default defineConfig({
+  plugins: [AuthorTag({author: "shinji", date: new Date(), custom: `Hello Shinji`})]
+}``)
+```
 

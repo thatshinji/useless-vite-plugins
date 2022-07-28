@@ -1,6 +1,10 @@
+import Image from "./components/image"
+
 function App() {
   return(
-    <div>app</div>
+    <div>
+      <Image />
+    </div>
   )
 }
 

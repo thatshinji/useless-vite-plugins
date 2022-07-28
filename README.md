@@ -1,7 +1,8 @@
 # useless-vite-plugins
-## 没用的vite插件集合
-这里提供了一些并没有什么卵用的vite插件
+## 没什么卵用的vite插件集合
+这里提供了一些并没有什么卵用的vite插件，但是希望有一天有用
 
+所有插件都在plugins文件夹
 ### author-tag
 该插件可以在你的html页面中插入作者相关的注释内容
 
@@ -18,7 +19,7 @@ export default defineConfig({
 ```ts
 import ImgComp from "./img-comp"
 export default defineConfig({
-  plugins: [ImgComp]
+  plugins: [ImgComp()]
 })
 ```
 demo

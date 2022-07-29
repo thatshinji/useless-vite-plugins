@@ -35,7 +35,7 @@ const ImageComp = (options: ImageOptions) => {
       const esbuildPath = resolve.sync('esbuild', { basedir: 'vite'})
       const esbuild = await import(esbuildPath)
       const src = code.replace('export default', '')
-      const componentCode = genComp(code, src)
+      const componentCode = genComp(src)
       const result = await esbuild.transform(componentCode, {
         loader: 'tsx',
       })

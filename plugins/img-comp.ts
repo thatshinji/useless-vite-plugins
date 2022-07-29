@@ -7,13 +7,15 @@ export interface ImageOptions {
 
 let config: ResolvedConfig
 const imgRegex = /\.(png|jpg|gif|svg)$/
-const genComp = (code: string, src: string) => {
+const genComp = (src: string) => {
   return `
     import React from 'react'
-    const Image = () => {
-      return (
-        <img src=${src} alt=""/>
-      )
+    const Image = ({className, onClick, key}) => {
+      return React.createElement('img',
+        { src: ${src},
+          className,
+          onClick
+        })
     }
     export default Image
   `
